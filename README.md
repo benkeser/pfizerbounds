@@ -21,11 +21,11 @@ control type 1 error at level 0.025.
 I wanted to answer the following question: if Pfizer’s success criteria
 (detailed by their case splits at each interim analysis in Table 5 of
 the protocol, page 103) were applied with a more standard frequentist
-analysis, what are the stopping bounds and how do they compare to more
-standard forms of sequential monitoring, like O’Brien Fleming? To that
-end, I checked the implied operating characteristics of a trial that
-stopped based on the case splits given by Pfizer, but instead of using a
-Bayesian analysis, used on a conditional binomial test (see
+analysis, what are the implied stopping bounds and how do they compare
+to more standard forms of sequential monitoring, like O’Brien Fleming?
+To that end, I checked the implied operating characteristics of a trial
+that stopped based on the case splits given by Pfizer, but instead of
+using a Bayesian analysis, used on a conditional binomial test (see
 [below](https://github.com/benkeser/pfizerbounds#analysis-details) for
 details).
 
