@@ -22,7 +22,12 @@ I wanted to answer the following question: if Pfizer’s success criteria
 (detailed by their case splits at each interim analysis in Table 5 of
 the protocol, page 103) were applied with a more standard frequentist
 analysis, what are the implied success criteria and how does it compare
-to more standard forms of sequential monitoring, like O’Brien Fleming.
+to more standard forms of sequential monitoring, like O’Brien Fleming?
+To that end, I checked the implied operating characteristics of a trial
+that stopped based on the case splits given by Pfizer, but instead of
+using a Bayesian analysis, used on a conditional binomial test (see
+[below](https://github.com/benkeser/pfizerbounds#analysis-details) for
+details).
 
 ## Results
 
@@ -31,8 +36,10 @@ each planned analysis. We see that overall **the Pfizer trial is largely
 similar to a trial that uses the same number of interim analyses with an
 exact binomial test with Pocock-style sequential monitoring**.
 
-Notably, this style of monitoring is *more aggressive* stopping early
-than O’Brien-Fleming-type monitoring, which is employed by Moderna.
+Notably, this style of monitoring is *more aggressive* in terms of
+stopping early than O’Brien-Fleming-type monitoring, which is employed
+by Moderna. Both designs appropriately control type I error, but it’s
+interesting to note this difference.
 
 ![Plot of implied Pfizer bounds vs. OBF and
 Pocock](README_files/figure-gfm/bounds-plot-1.png)
